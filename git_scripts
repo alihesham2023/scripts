@@ -1,0 +1,76 @@
+git commit -m "to add comment"
+git status "to show the status of the git resperatory"
+git add "to add something to repo"
+git push -u origin master "to push files"
+
+-------------------------------------------------------
+
+
+You can add files using git add, example git add README, git add <folder>/*, or even git add *
+
+Then use git commit -m "<Message>" to commit files
+
+Finally git push -u origin master to push files.
+
+When you make modifications run git status which gives you the list of files modified, add them using git add * for everything or you can specify each file individually, then git commit -m <message> and finally, git push -u origin master
+
+Example - say you created a file README, running git status gives you
+
+$ git status
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#   README
+
+Run git add README, the files are staged for committing. Then run git status again, it should give you - the files have been added and ready for committing.
+
+$ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#   new file:   README
+#
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Then run git commit -m 'Added README'
+
+$ git commit -m 'Added README'
+[master 6402a2e] Added README
+  0 files changed, 0 insertions(+), 0 deletions(-)
+  create mode 100644 README
+
+Finally, git push -u origin master to push the remote branch master for the repository origin.
+
+$ git push -u origin master
+Counting objects: 4, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 267 bytes, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To xxx@xxx.com:xxx/xxx.git
+   292c57a..6402a2e  master -> master
+Branch master set up to track remote branch master from origin.
+
+The files have been pushed successfully to the remote repository.
+
+Running a git pull origin master to ensure you have absorbed any upstream changes
+
+$ git pull origin master
+remote: Counting objects: 12, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 8 (delta 4), reused 7 (delta 3)
+Unpacking objects: 100% (8/8), done.
+From xxx.com:xxx/xxx
+ * branch            master     -> FETCH_HEAD
+Updating e0ef362..6402a2e
+Fast-forward
+ public/javascript/xxx.js |    5 ++---
+ 1 files changed, 2 insertions(+), 3 deletions(-)
+ create mode 100644 README
+
+If you do not want to merge the upstream changes with your local repository, run git fetch to fetch the changes and then git merge to merge the changes. git pull is just a combination of fetch and merge.
+
+I have personally used gitimmersion - http://gitimmersion.com/ to get upto curve on git, its a step-by-step guide, if you need some documentation and help
