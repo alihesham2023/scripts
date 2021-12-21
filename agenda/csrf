@@ -1,0 +1,9 @@
+CSRF : to change password , email , etc . 
+CSRF : you should check if csrf token existed or not ,
+then check it work by removing Csrf token , 
+then if the token is tied to user or not , 
+then if the token is tied to session , 
+then if the token is depend on the requset method (GET-Post-..)
+There is three conditions in portswigger see them later .
+End 
+...

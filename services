@@ -1,2 +1,4 @@
 sudo service mysql start
 sudo service apache2 start 
+echo mysql was started 
+echo apache2 was started 
