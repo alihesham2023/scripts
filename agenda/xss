@@ -1,0 +1,9 @@
+This is xss vuln : 
+xss is cross site scripting means you will excute javascript commonds in the site 
+There are many types of xss : 
+	1-reflected 		2-stored 	3-DOM based 
+Example : 
+	<img src="" onerror=alert()>
+	<img src"" onmouseover=prompt()>
+For  more information about xss you can visit : 
+	https://github.com/s0md3v/AwesomeXSS#awesome-challenges
