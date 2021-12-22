@@ -1,3 +1,5 @@
+CSRF should be http or Https .
+all we do is around the token .
 CSRF : to change password , email , etc . 
 CSRF : you should check if csrf token existed or not ,
 then check it work by removing Csrf token , 
