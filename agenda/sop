@@ -1,0 +1,8 @@
+sop means same origin policy .
+it happened when one webiste try to read responses from the other website .
+Example : Website A try to read responces from Website B . 
+There are three requreiments to read the response from another one : 
+1- Having the same protocol 
+2- Having the same hostname 
+3- Having the same protocol 
+
