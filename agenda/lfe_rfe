@@ -49,7 +49,7 @@ if the file is about to end with ".php" extention or the file name not exceded x
 
 For more information visit : 
 https://book.hacktricks.xyz/pentesting-web/file-inclusion 
-https://cobalt.io/blog/a-pentesters-guide-to-file-inclusion
+https://cobalt.io/blog/a-pentesters-guide-to-file-inclusion <<<<<<<< VERY USEFUL >>>>>>>>>
 
 The first one is ../../.../../../etc/passwd and so on 
 Then ../..//..////../..//../../../ and so on 
