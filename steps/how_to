@@ -5,3 +5,11 @@ mysql -u root -p
 CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'some_very_complex_password';
 GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
 FLUSH PRIVILEGES;
+how to install a tool using snapcraft store like (xmind) : 
+site : https://snapcraft.io/xmind 
+enable snap : 
+sudo apt update
+sudo apt install snapd
+sudo snap install core 
+install : 
+sudo snap install xmind 
