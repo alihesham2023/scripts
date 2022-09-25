@@ -1,0 +1,7 @@
+how to add comment to be used by terminal at all : 
+mv </bin :which in the dir of tool> /bin/
+how to create Database (db):  
+mysql -u root -p
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'some_very_complex_password';
+GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+FLUSH PRIVILEGES;
