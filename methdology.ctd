@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cherrytree>
+  <bookmarks list=""/>
+  <node name="recon" unique_id="17" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530729" ts_lastsave="1670530761">
+    <node name="passive" unique_id="18" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530741" ts_lastsave="1670531258">
+      <rich_text>Subdomains : 
+amass 
+Fuzz 
+
+Emails : 
+People : 
+</rich_text>
+    </node>
+    <node name="negative" unique_id="20" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530761" ts_lastsave="1670530761"/>
+  </node>
+  <node name="xss" unique_id="1" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530301" ts_lastsave="1670530781">
+    <node name="definition" unique_id="2" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530318" ts_lastsave="1670530966">
+      <rich_text>Cross site scripting : 
+	</rich_text>
+    </node>
+    <node name="payloads" unique_id="3" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530331" ts_lastsave="1670530331"/>
+    <node name="how to fix" unique_id="4" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530340" ts_lastsave="1670530340"/>
+    <node name="where to find &amp; writeups" unique_id="5" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530415" ts_lastsave="1670530415"/>
+  </node>
+  <node name="lfi &amp; rfi" unique_id="7" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530590" ts_lastsave="1670530681">
+    <node name="definition" unique_id="8" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530590" ts_lastsave="1670530590">
+      <rich_text>Cross site scripting : 
+</rich_text>
+    </node>
+    <node name="payloads" unique_id="9" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530590" ts_lastsave="1670530590"/>
+    <node name="how to fix" unique_id="10" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530590" ts_lastsave="1670530590"/>
+    <node name="where to find &amp; writeups" unique_id="11" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530590" ts_lastsave="1670530590"/>
+  </node>
+  <node name="sqli" unique_id="12" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530681" ts_lastsave="1670530708">
+    <node name="definition" unique_id="13" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530681" ts_lastsave="1670530681">
+      <rich_text>Cross site scripting : 
+</rich_text>
+    </node>
+    <node name="payloads" unique_id="14" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530681" ts_lastsave="1670530681"/>
+    <node name="how to fix" unique_id="15" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530681" ts_lastsave="1670530681"/>
+    <node name="where to find &amp; writeups" unique_id="16" prog_lang="custom-colors" tags="" readonly="0" nosearch_me="0" nosearch_ch="0" custom_icon_id="0" is_bold="0" foreground="" ts_creation="1670530681" ts_lastsave="1670530681"/>
+  </node>
+</cherrytree>
